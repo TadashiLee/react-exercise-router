@@ -7,6 +7,7 @@ import AboutUs from './AboutUs';
 import Header from './Header';
 import Products from './Products';
 import Product from './Product';
+import Goods from './Goods';
 // import '../../../node_modules/';
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path='/products' component={Products} />
           <Route exact path='/products/:id' component={Product} />
           <Route exact path='/about-us' component={AboutUs} />
+          <Route exact path='/goods' component={Goods} />
           <Route path="/" component={Home} />
         </Switch>
         </BrowserRouter>
