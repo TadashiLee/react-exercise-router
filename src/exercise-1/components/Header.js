@@ -7,6 +7,9 @@ class Header extends Component {
         <NavLink exact to='/' className='nav-link'activeStyle={{fontWeight: "bold",color: "red"}}>
           Home
         </NavLink>
+        <NavLink to='/products' className='nav-link' activeStyle={{fontWeight: "bold",color: "red"}}>
+          Products
+        </NavLink>
         <NavLink exact to='/my-frofile' className='nav-link' activeStyle={{fontWeight: "bold",color: "red"}}>
           My Profile
         </NavLink>

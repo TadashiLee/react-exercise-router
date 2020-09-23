@@ -5,6 +5,8 @@ import Home from './Home';
 import MyProfile from './MyProfile';
 import AboutUs from './AboutUs';
 import Header from './Header';
+import Products from './Products';
+import Product from './Product';
 // import '../../../node_modules/';
 class App extends Component {
   render() {
@@ -14,6 +16,8 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path='/my-frofile' component={MyProfile}/>
+          <Route exact path='/products' component={Products} />
+          <Route exact path='/products/:id' component={Product} />
           <Route exact path='/about-us' component={AboutUs} />
           <Route path="/" component={Home} />
         </Switch>
